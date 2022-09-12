@@ -1,6 +1,6 @@
 
 body {
-    
+  max-width: 768px;  
 }
 .header-bg {
   background-image: url(assets/images/bg1.jpg);
@@ -82,3 +82,18 @@ button {
     width: 50%;
     margin-left: 150px;
   }
+
+  .aboutcardmain {
+    width: 800px;
+    background-color: blue;
+    height: 400px;
+  }
+.aboutcard1 {
+    width: 600px;
+    height: 100px;
+}
+
+.aboutcard2 {
+    width: 600px;
+    height: 100px;
+}
