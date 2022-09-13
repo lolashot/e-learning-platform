@@ -1,99 +1,131 @@
-
 body {
-  max-width: 768px;  
 }
 .header-bg {
   background-image: url(assets/images/bg1.jpg);
-  background-size:cover;
+  background-size: cover;
   background-color: rosybrown;
   position: relative;
-  height: 100%;
+  height: 700px;
   background-repeat: no-repeat;
 }
 
 .headercontent {
-    z-index: 300;
+  z-index: 300;
 }
 
 .header-icon {
-    color: #272a31;
+  color: #272a31;
 }
 
 .greeting {
-    color: #ec5242;
+  color: #ec5242;
 }
 
 .title {
-    color: #ec5242;
+  color: #ec5242;
 }
 
 .text {
-    color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .text1 {
-    color: #272a31;
-    font-size: bold;
+  color: #272a31;
+  font-size: bold;
 }
 
 .text2 {
-    color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .coursescard {
-    background-color: #272a31;
+  background-color: #272a31;
 }
 
 .coursescards {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .line {
-    border: 3px solid #ec5242;
-    width: 35px;
-    margin-left: 350px;
+  border: 3px solid #ec5242;
+  width: 35px;
+  margin-left: 350px;
 }
 
 .technology {
-    color: #ec5242;
+  color: #ec5242;
 }
 
 .footercard {
-    background-color: #ec5242;
-   
-    cursor: pointer;
+  background-color: #ec5242;
 
+  cursor: pointer;
 }
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .line1 {
-    border: 3px solid #ec5242;
-    width: 35px;
-    margin-left: 300px;
+  border: 3px solid #ec5242;
+  width: 35px;
+  margin-left: 300px;
 }
 
 button {
-    background-color: white;
-    color: black;
-    border: 2px solid grey; 
-    width: 50%;
-    margin-left: 150px;
-  }
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+  width: 50%;
+  margin-left: 150px;
+}
 
-  .aboutcardmain {
-    width: 800px;
-    background-color: blue;
-    height: 400px;
-  }
+.aboutcardmain {
+  width: 800px;
+  background-color: blue;
+  height: 400px;
+}
+
 .aboutcard1 {
-    width: 600px;
-    height: 100px;
+  width: 600px;
+  height: 100px;
 }
 
 .aboutcard2 {
-    width: 600px;
-    height: 100px;
+  width: 600px;
+  height: 100px;
+}
+.imgdiv {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .desktopcoursetitle {
+    color: #ec5242;
+  }
+  .desktopline {
+    border: 3px solid #ec5242;
+  width: 35px;
+  margin-left: 720px;
+  }
+
+  .header-bg {
+    height: 700px;
+  }
+  
+  footer {
+    background-color: grey;
+  }
+
+  .grey {
+    color: grey;
+  }
 }
