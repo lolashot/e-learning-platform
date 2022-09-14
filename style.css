@@ -76,16 +76,16 @@ header .navigation li a {
   background-repeat: no-repeat;
   background-position: center;
 }
-header.sticky .menuToggle {
+/* header.sticky .menuToggle {
   filter: invert(1);
-}
+} */
 
 .header-bg {
   background-image: url(assets/images/bg1.jpg);
   background-size: cover;
   background-color: rosybrown;
   position: relative;
-  height: 700px;
+  height: 600px;
   background-repeat: no-repeat;
 }
 
@@ -188,6 +188,10 @@ button {
 }
 
 @media (min-width: 768px) {
+  .header-bg {
+   height: 700px;
+  }
+
   header {
     position: fixed;
     top: 0;
@@ -231,9 +235,10 @@ button {
     display: flex;
   }
 
-  header .navigation.active {
+  /* header .navigation.active {
     display: none;
-  }
+    
+  } */
 
   header .navigation li {
     list-style: none;

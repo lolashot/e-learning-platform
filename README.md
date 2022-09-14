@@ -12,8 +12,7 @@ e learning platform
 
 ## Live Demo (if available)
 
-https://lolashot.github.io/My-Complete-Portfolio/
-
+https://lolashot.github.io/e-learning-platform/
 ## Getting Started
 
 Download the code or clone the repo to your local PC.
