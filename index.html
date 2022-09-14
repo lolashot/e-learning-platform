@@ -16,60 +16,24 @@
       src="https://kit.fontawesome.com/c5af90d277.js"
       crossorigin="anonymous"
     ></script>
+    <script src="lecturers.js"></script>
+
     <title>e-learning-platform</title>
   </head>
   <body>
     <section class="">
     <main class="header-bg" >
       <section class=" headercontent">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 d-sm-none d-lg-block ">
-          <div class="container">
-            <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#partners" class="nav-link"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 ">
-          <div class="container">
-            <a href="#" class="navbar-brand">RICHES</a>
-    
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navmenu"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#partners" class="nav-link">Partners</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    
-            <div class=" container justify-content-center justify-content-lg-start mt-5">
+      <header>
+        <a href="#" class="logo">RICHES</a><span class="dot">.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">home</a></li>
+            <li><a href="about.html" onclick="toggleMenu();">about</a></li>
+            <li><a href="#courses" onclick="toggleMenu();">courses</a></li>
+        </ul>
+    </header>
+            <div id="banner" class=" container justify-content-center justify-content-lg-start mt-5">
               <h3 class="greeting">hi There,</h3>
               <h1 class="title">
                 The E-learning Platform That Simplifies Online Training!
@@ -159,7 +123,7 @@
           </div>
           </div>
     </section>
-    <section class=" d-sm-none d-lg-block">
+    <section class=" d-sm-none d-lg-block" id="courses">
         <div class="card-body bg-dark p-5">
           <div class="">
             <h2 class=" text-white text-center card-title">Our Courses</h2>
@@ -203,10 +167,10 @@
                 <div class="card-body">
                     <div class="row">
                     <img src="assets/images/person1.jpg" class="bg col-sm-6" alt="" />
-                    <div class="col-sm-6">
-                    <h2 class="">James Brown</h2>
-                    <h5 class="title">Former ICT director at Microsoft</h5>
-                    <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                    <div class="col-sm-6 lecturers" id='7'>
+                    <h2 class=""id='name'>James Brown</h2>
+                    <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
+                    <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                   </div>  
                 </div>
               </div>
@@ -214,10 +178,10 @@
                 <div class="card-body">
                     <div class="row">
                     <img src="assets/images/person1.jpg" class="bg col-sm-6" alt="" />
-                    <div class="col-sm-6">
-                    <h2 class="">Angela Leo</h2>
-                    <h5 class="title">Chief Technical officer at Riches Institutes</h5>
-                    <p>Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                    <div class="col-sm-6 lecturers" id='8'>
+                    <h2 class=""id="name">Angela Leo</h2>
+                    <h5 class="title"id="position">Chief Technical officer at Riches Institutes</h5>
+                    <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
                   </div>  
                 </div>
               </div>
@@ -233,12 +197,12 @@
                 <div class="row">
                     <div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="row ">
                             <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                            <div class="col-lg-6">
-                            <h2 class="">James Brown</h2>
-                            <h5 class="title">Former ICT director at Microsoft</h5>
-                            <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                            <div class="col-lg-6 lecturers" id='1'>
+                            <h2 class=""id="name">James Brown</h2>
+                            <h5 class="title"id="position">Former ICT director at Microsoft</h5>
+                            <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
                         </div>
                      </div> 
@@ -247,10 +211,11 @@
                         <div class="card-body">
                             <div class="row">
                             <img src="assets/images/person1.jpg" class="bg col-lg-6" alt="" />
-                            <div class="col-lg-6">
-                            <h2 class="">Angela Leo</h2>
-                            <h5 class="title">Chief Technical officer at Riches Institutes</h5>
-                            <p>Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                            <div class="col-lg-6 lecturers" id='2'
+                            >
+                            <h2 class=""id='name'>Angela Leo</h2>
+                            <h5 class="title"id='position'>Chief Technical officer at Riches Institutes</h5>
+                            <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
                         </div>
                       </div>
@@ -259,10 +224,10 @@
                           <div class="card-body">
                               <div class="row">
                               <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                              <div class="col-lg-6">
-                              <h2 class="">James Brown</h2>
-                              <h5 class="title">Former ICT director at Microsoft</h5>
-                              <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                              <div class="col-lg-6 lecturers" id='3'>
+                              <h2 class=""id="name">James Brown</h2>
+                              <h5 class="title" id="position">Former ICT director at Microsoft</h5>
+                              <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                             </div>  
                           </div>
                        </div> 
@@ -270,10 +235,10 @@
                         <div class="card-body">
                             <div class="row">
                             <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                            <div class="col-lg-6">
-                            <h2 class="">James Brown</h2>
-                            <h5 class="title">Former ICT director at Microsoft</h5>
-                            <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                            <div class="col-lg-6 lecturers" id='4'>
+                            <h2 class=""id='name'>James Brown</h2>
+                            <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
+                            <p id='description'>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
                         </div>
                      </div> 
@@ -281,10 +246,10 @@
                       <div class="card-body">
                           <div class="row">
                           <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                          <div class="col-lg-6">
-                          <h2 class="">James Brown</h2>
-                          <h5 class="title">Former ICT director at Microsoft</h5>
-                          <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                          <div class="col-lg-6 lecturers" id='5'>
+                          <h2 class=""id='name'>James Brown</h2>
+                          <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
+                          <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                         </div>  
                       </div>
                    </div> 
@@ -292,10 +257,10 @@
                     <div class="card-body">
                         <div class="row">
                         <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                        <div class="col-lg-6">
-                        <h2 class="">James Brown</h2>
-                        <h5 class="title">Former ICT director at Microsoft</h5>
-                        <p>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                        <div class="col-lg-6 lecturers" id='6'>
+                        <h2 class=""id='name'>James Brown</h2>
+                        <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
+                        <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                       </div>  
                     </div>
                  </div> 
@@ -320,6 +285,8 @@
                   </div>
                  </footer>
     </section>
+    <script src="hamburger.js"></script>
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

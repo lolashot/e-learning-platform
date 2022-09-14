@@ -20,55 +20,17 @@
   </head>
   <body>
     <section class="">
-    <main class="header-bg p-3" >
+    <main class="header-bg" >
       <section class="container headercontent">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 d-sm-none d-lg-block ">
-          <div class="container">
-            <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#partners" class="nav-link"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 ">
-          <div class="container">
-            <a href="#" class="navbar-brand">RICHES</a>
-    
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navmenu"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navmenu">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#partners" class="nav-link">Partners</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    
+        <header>
+          <a href="#" class="logo">RICHES</a><span class="dot">.</span></a>
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">
+              <li><a href="index.html" onclick="toggleMenu();">home</a></li>
+              <li><a href="about.html" onclick="toggleMenu();">about</a></li>
+              <li><a href="#alumnis" onclick="toggleMenu();">alumnis</a></li>
+          </ul>
+      </header>
             <div class="mt-5  justify-content-center align-items-center" >
               <h3 class="greeting">hi There,</h3>
               <h1 class="title">
@@ -87,59 +49,60 @@
                 <h4 class="grey">riches@gmail.com</h4>
               </div>
             </div>
+            </section>
     </main>
-    <section class="mt-5 justify-content-center align-items-center  container">
+    <section id="alumnis" class="mt-5 justify-content-center align-items-center  container">
       <div class="">
         <h1 class="text1">See Our Alumnis</h1>
         <p class="title lead">here are some of our alumnis, with a brief summary of each of them.</p>
       </div>
       <div class=" row">
         <div class="card  col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
+        <img src="assets/images/student3.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="card-title">Caleb Smart</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small>FRONTEND DEVELOPER</small></p>
+          <h4 class="card-title">Caleb Smart</h4>
+          <h5 class="card-text title"> FULLSTACK DEVELOPER</h5>
+          <p class="card-text"><small>2019.</small></p>
         </div>
       </div>
       <div class="card  col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
+        <img src="assets/images/student3.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="card-title">James Craig</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small>FRONTEND DEVELOPER</small></p>
+          <h4 class="card-title">James Craig</h4>
+          <h5 class="card-text title"> FRONTEND DEVELOPER</h5>
+          <p class="card-text"><small>2019.</small></p>
         </div>
       </div>
       <div class="card  col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
+        <img src="assets/images/student3.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="card-title">Davis You</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small>FRONTEND DEVELOPER</small></p>
+          <h4 class="card-title">Davis You</h4>
+          <h5 class="card-text title"> FULLSTACK DEVELOPER</h5>
+          <p class="card-text"><small>2020.</small></p>
         </div>
       </div>
       <div class="card  col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
+        <img src="assets/images/student3.jpg." class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="card-title">Joe Smart</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small>FRONTEND DEVELOPER</small></p>
+          <h4 class="card-title">Joe Smart</h4>
+          <h5 class="card-text title">FRONTEND DEVELOPER</h5>
+          <p class="card-text"><small>2022.</small></p>
         </div>
       </div>
       <div class="card col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h2 class="card-title">Caleb Smart</h2>
-          <h3 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h3>
-          <h2 class="card-text"><small>FRONTEND DEVELOPER</small></h2>
-        </div>
-      </div>
-      <div class="card text-white col-lg-4 col-md-6 col-sm-12 mb-3">
-        <img src="assets/images/person3.jpg." class="card-img" alt="...">
+        <img src="assets/images/student3.jpg." class="card-img" alt="...">
         <div class="card-img-overlay">
           <h4 class="card-title">Caleb Smart</h4>
-          <h5 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
-          <p class="card-text"><small>FRONTEND DEVELOPER</small></p>
+          <h5 class="card-text title">REACT</h5>
+          <p class="card-text"><small>2020.</small></p>
+        </div>
+      </div>
+      <div class="card text-dark col-lg-4 col-md-6 col-sm-12 mb-3">
+        <img src="assets/images/student3.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h4 class="card-title">Caleb Smart</h4>
+          <h5 class="card-text title">FULLSTACK DEVELOPER</h5>
+          <p class="card-text"><small>2016.</small></p>
         </div>
       </div>
       </div>
@@ -162,3 +125,6 @@
       </div>
      </footer>
     </section>
+    <script src="hamburger.js"></script>
+    </body>
+
