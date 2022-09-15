@@ -18,6 +18,7 @@
     ></script>
     <script src="lecturers.js"></script>
 
+
     <title>e-learning-platform</title>
   </head>
   <body>
@@ -26,11 +27,11 @@
       <section class=" headercontent">
       <header>
         <a href="#" class="logo">RICHES</a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <div class="menuToggle toggler"></div>
         <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu();">home</a></li>
-            <li><a href="about.html" onclick="toggleMenu();">about</a></li>
-            <li><a href="#courses" onclick="toggleMenu();">courses</a></li>
+            <li><a href="#" class="toggler">home</a></li>
+            <li><a href="about.html"  class="toggler">about</a></li>
+            <li><a href="#courses" class="toggler">courses</a></li>
         </ul>
     </header>
             <div class=" container justify-content-center justify-content-lg-start pt-lg-2 mt-5 pt-sm-5">
@@ -53,7 +54,7 @@
               </div>
               </div>
              </main>
-    <section class="d-lg-none d-sm-block d-md-block">
+    <section class="d-block d-lg-none">
         <div class="card coursescard p-3 ">
             <div class="">
                 <h2 class=" text-white text-center card-title">Our Courses</h2>
@@ -123,7 +124,7 @@
           </div>
           </div>
     </section>
-    <section class=" d-sm-none d-md-none d-lg-block" id="courses">
+    <section class=" d-none d-lg-block" id="courses">
         <div class="card-body bg-dark p-5">
           <div class="">
             <h2 class=" text-white text-center card-title">Our Courses</h2>
@@ -159,16 +160,16 @@
               </div> 
                  
     </section>
-    <section class=" d-sm-block d-md-block d-lg-none p-5">
+    <section class=" d-block d-lg-none p-5">
         <div class="card-body">
             <h2 class="text-dark text-center ">Our Lecturers</h2>
         <hr class="line1">
             <div class="col-sm-12 mt-4">
                 <div class="card-body">
-                    <div class="row">
+                    <div  id="7" class="row lecturers">
                     <img src="assets/images/person1.jpg" class="bg col-sm-6" alt="" />
-                    <div class="col-sm-6 lecturers" id='7'>
-                    <h2 class=""id='name'>James Brown</h2>
+                    <div class="col-sm-6">
+                    <h2 class='name'>James Brown</h2>
                     <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
                     <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                   </div>  
@@ -176,10 +177,10 @@
               </div>
               <div class="col-sm-12 mt-4">
                 <div class="card-body">
-                    <div class="row">
+                    <div id="6" class="row lecturers">
                     <img src="assets/images/person1.jpg" class="bg col-sm-6" alt="" />
-                    <div class="col-sm-6 lecturers" id='8'>
-                    <h2 class=""id="name">Angela Leo</h2>
+                    <div class="col-sm-6">
+                    <h2 class="name">Angela Leo</h2>
                     <h5 class="title"id="position">Chief Technical officer at Riches Institutes</h5>
                     <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
                   </div>  
@@ -191,16 +192,16 @@
                </a> 
                </div>  
                  </section>
-                 <section class=" d-lg-block d-sm-none d-md-none p-5 mt-5">
+                 <section class="d-none d-lg-block p-5 mt-5">
                     <h2 class="text-dark text-center">Our Lecturers</h2>
                 <hr class="desktopline">
                 <div class="row">
-                    <div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                         <div class="card-body">
-                            <div class="row ">
+                            <div id="0" class="row lecturers">
                             <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                            <div class="col-lg-6 lecturers" id='1'>
-                            <h2 class=""id="name">James Brown</h2>
+                            <div class="col-lg-6">
+                            <h2 class="name">James Brown</h2>
                             <h5 class="title"id="position">Former ICT director at Microsoft</h5>
                             <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
@@ -209,56 +210,58 @@
                      </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                         <div class="card-body">
-                            <div class="row">
+                            <div id="1" class="row lecturers">
                             <img src="assets/images/person1.jpg" class="bg col-lg-6" alt="" />
-                            <div class="col-lg-6 lecturers" id='2'
-                            >
-                            <h2 class=""id='name'>Angela Leo</h2>
+                            <div class="col-lg-6">
+                            <h2 class='name'>Angela Leo</h2>
                             <h5 class="title"id='position'>Chief Technical officer at Riches Institutes</h5>
                             <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
                         </div>
                       </div>
                         </div>
-                        <div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                           <div class="card-body">
-                              <div class="row">
+                              <div id="2" class="row lecturers">
                               <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                              <div class="col-lg-6 lecturers" id='3'>
-                              <h2 class=""id="name">James Brown</h2>
+                              <div class="col-lg-6">
+                              <h2 class="name">James Brown</h2>
                               <h5 class="title" id="position">Former ICT director at Microsoft</h5>
                               <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                             </div>  
                           </div>
                        </div> 
-                       </div><div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                         <div class="card-body">
-                            <div class="row">
+                            <div id="3" class="row lecturers">
                             <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                            <div class="col-lg-6 lecturers" id='4'>
-                            <h2 class=""id='name'>James Brown</h2>
+                            <div class="col-lg-6">
+                            <h2 class='name'>James Brown</h2>
                             <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
                             <p id='description'>James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                           </div>  
                         </div>
                      </div> 
-                     </div><div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
+                     </div>
+                     <div id="5" class="col-lg-6 col-md-6 col-sm-12 mb-3">
                       <div class="card-body">
-                          <div class="row">
+                          <div id="4" class="row lecturers">
                           <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                          <div class="col-lg-6 lecturers" id='5'>
-                          <h2 class=""id='name'>James Brown</h2>
+                          <div class="col-lg-6">
+                          <h2 class='name'>James Brown</h2>
                           <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
                           <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                         </div>  
                       </div>
                    </div> 
-                   </div><div class=" col-lg-6 col-md-6 col-sm-12 mb-3">
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <div class="card-body">
-                        <div class="row">
+                        <div id="5" class="row lecturers">
                         <img src="assets/images/person1.jpg" class="col-lg-6" alt="" />
-                        <div class="col-lg-6 lecturers" id='6'>
-                        <h2 class=""id='name'>James Brown</h2>
+                        <div class="col-lg-6">
+                        <h2 class='name'>James Brown</h2>
                         <h5 class="title"id='position'>Former ICT director at Microsoft</h5>
                         <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
                       </div>  
@@ -267,25 +270,26 @@
                  </div>
                         </div>
                  </section>
-                 <section class="pt-3 bg-dark mt-5 d-lg-block d-sm-none">
-                  <div class="card-body">
-                    <h2 class="text-white text-center ">Our Partners</h2>
-                <div class="d-lg-flex justify-content-around">
-                  <h3 class="text">Goggle</h3>
-                  <h3 class="grey">Facebook</h3>
-                  <h3 class="text ">Microsoft</h3>
-                  <h3 class="grey">UN</h3>
+                 <section class="pt-3 bg-dark mt-3 d-lg-block">
+                  <div class="card-body text-center">
+                    <h2 class="text-white p-lg-3 ">Our Partners</h2>
+                <div class="d-block d-lg-flex justify-content-around">
+                  <h4 class="text">Goggle</h4>
+                  <h4 class="grey">Facebook</h4>
+                  <h4 class="text ">Microsoft</h4>
+                  <h4 class="grey">UN</h4>
                 </div>
                 </div>
                  </section>
                  <footer class="p-5 d-lg-block d-sm-none">
-                  <div class="d-flex justify-content-between">
+                  <div class="d-block  d-lg-flex justify-content-between ">
                   <h2>RichesLearning Institute</h2>
                   <p class="lead">@2022 a global web development institution</p>
                   </div>
                  </footer>
     </section>
     <script src="hamburger.js"></script>
+
 
     <!-- JavaScript Bundle with Popper -->
     <script
