@@ -46,10 +46,6 @@ header .navigation.active {
   background: #fff;
 }
 
-header .navigation.active li a {
-  color: #ec5242;
-}
-
 header .navigation li {
   margin-left: 0;
 }
@@ -62,6 +58,10 @@ header .navigation li a {
 header .navigation.active li {
   list-style-type: none;
   padding-top: 20px;
+}
+
+header .navigation.active li a {
+  color: #ec5242;
 }
 
 .menuToggle {
@@ -187,7 +187,9 @@ button {
 
 @media (min-width: 768px) {
   .header-bg {
-    height: 700px;
+    height: 600px;
+    margin-top: 100px;
+    padding-top: 50px;
   }
 
   header {
@@ -266,12 +268,6 @@ button {
     border: 3px solid #ec5242;
     width: 35px;
     margin-left: 720px;
-  }
-
-  .header-bg {
-    height: 600px;
-    margin-top: 100px;
-    padding-top: 50px;
   }
 
   footer {
