@@ -15,19 +15,19 @@ header {
 }
 
 header .logo {
-display: none;
+  display: none;
 }
 
-header .logo span{
+header .logo span {
   display: none;
-  }
+}
 
-  header.sticky {
-    background: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  }
-  
+header.sticky {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
 header .navigation {
   display: none;
 }
@@ -49,8 +49,8 @@ header .navigation.active li a {
 }
 
 header .navigation.active li {
-list-style-type: none;
-padding-top: 20px;
+  list-style-type: none;
+  padding-top: 20px;
 }
 
 header .navigation li {
@@ -189,7 +189,7 @@ button {
 
 @media (min-width: 768px) {
   .header-bg {
-   height: 700px;
+    height: 700px;
   }
 
   header {
@@ -221,8 +221,8 @@ button {
   header .logo span {
     display: block;
     color: #ec5242;
-    }
-    
+  }
+
   header.sticky .logo {
     color: #111;
   }
