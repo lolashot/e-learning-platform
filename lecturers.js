@@ -71,12 +71,12 @@ window.addEventListener('load', () => {
   const nodeList = document.querySelectorAll('.lecturers');
   let found = {};
   nodeList.forEach((element) => {
-  found = lecturers.find((lecturer) => lecturer.id == element.id);
-  if (found) {
-    element.children[0].attributes[0].value   = found.image;
-    element.children[1].children[0].innerHTML = found.name;
-    element.children[1].children[1].innerHTML = found.position;
-    element.children[1].children[2].innerHTML = found.description;
-  }
+    found = lecturers.find((lecturer) => lecturer.id === element.id);
+    if (found) {
+      element.children[0].attributes[0].value = found.image;
+      element.children[1].children[0].innerHTML = found.name;
+      element.children[1].children[1].innerHTML = found.position;
+      element.children[1].children[2].innerHTML = found.description;
+    }
   });
 });
