@@ -4,14 +4,14 @@ const lecturers = [
     name: 'Joe Praise',
     position: 'chief technical director',
     description: 'a world class professor of computer science',
-    image: 'assets/images/lecturer1.jpg'
+    image: 'assets/images/lecturer1.jpg',
   },
   {
     id: '1',
     name: 'Smith John ',
     position: 'react tutor',
     description: 'with over 20yrs experience in coding, and worked at microsoft',
-    image: './assets/images/lecturer2.jpg'
+    image: './assets/images/lecturer2.jpg',
   },
   {
     id: '2',
@@ -25,14 +25,14 @@ const lecturers = [
     name: 'Aron Sher',
     position: 'node js tutor',
     description: 'a world class professor of computer science',
-    image: './assets/images/lecturer3.jpg'
+    image: './assets/images/lecturer3.jpg',
   },
   {
     id: '4',
     name: 'Martha Ray',
     position: 'angular tutor',
     description: 'with over 20yrs experience in coding, and worked at microsoft',
-    image: './assets/images/lecturer2.jpg'
+    image: './assets/images/lecturer2.jpg',
 
   },
   {
@@ -40,7 +40,7 @@ const lecturers = [
     name: 'Fred Ann',
     position: 'tutor',
     description: 'a world class professor of computer science',
-    image: 'assets/images/lecturer1.jpg'
+    image: 'assets/images/lecturer1.jpg',
 
   },
   {
@@ -48,7 +48,7 @@ const lecturers = [
     name: 'Glory Yuu',
     position: 'tutor',
     description: 'a world class professor of computer science',
-    image: 'assets/images/lecturer3.jpg'
+    image: 'assets/images/lecturer3.jpg',
 
   },
   {
@@ -56,33 +56,27 @@ const lecturers = [
     name: 'May Cloe',
     position: 'tutor',
     description: 'a world class professor of computer science',
-    image: 'assets/images/lecturer2.jpg'
-  },    
+    image: 'assets/images/lecturer2.jpg',
+  },
   {
     id: '8',
     name: 'Love Cloe',
     position: 'tutor',
     description: 'a world class professor of computer science',
-    image: 'assets/images/lecturer2.jpg'
-  }                                 
-]
-
+    image: 'assets/images/lecturer2.jpg',
+  },
+];
 
 window.addEventListener('load', () => {
-    const nodeList = document.querySelectorAll('.lecturers');
-    console.log('first', nodeList);
-    let found = {};
-
-    nodeList.forEach((element) => {
-        console.log('jjj', element.children[0].attributes[0].value);
-
-      found = lecturers.find((lecturer) => lecturer.id == element.id);
-      console.log('222', found.name)
-      if (found) {
-      element.children[0].attributes[0].value   = found.image;
-      element.children[1].children[0].innerHTML = found.name;
-      element.children[1].children[1].innerHTML = found.position;
-      element.children[1].children[2].innerHTML = found.description;
-      }
-    });
+  const nodeList = document.querySelectorAll('.lecturers');
+  let found = {};
+  nodeList.forEach((element) => {
+  found = lecturers.find((lecturer) => lecturer.id == element.id);
+  if (found) {
+    element.children[0].attributes[0].value   = found.image;
+    element.children[1].children[0].innerHTML = found.name;
+    element.children[1].children[1].innerHTML = found.position;
+    element.children[1].children[2].innerHTML = found.description;
+  }
   });
+});
