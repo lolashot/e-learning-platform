@@ -1,5 +1,3 @@
-body {
-}
 header {
   position: fixed;
   top: 0;
@@ -8,10 +6,8 @@ header {
   padding: 10px 20px;
   z-index: 10000;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   transition: 0.5s;
-  /* background-color: #fff; */
 }
 
 header .logo {
@@ -31,6 +27,7 @@ header.sticky {
 header .navigation {
   display: none;
 }
+
 header .navigation.active {
   width: 100%;
   height: calc(100% - 68px);
@@ -48,18 +45,20 @@ header .navigation.active li a {
   color: #ec5242;
 }
 
+header .navigation li {
+  margin-left: 0;
+}
+
 header .navigation.active li {
   list-style-type: none;
   padding-top: 20px;
 }
 
-header .navigation li {
-  margin-left: 0;
-}
 header .navigation li a {
   color: #111;
   font-size: 1.6em;
 }
+
 .menuToggle {
   position: relative;
   width: 40px;
@@ -70,15 +69,13 @@ header .navigation li a {
   background-position: center;
   cursor: pointer;
 }
+
 .menuToggle.active {
   background: url(./assets/icons/icon2.png);
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* header.sticky .menuToggle {
-  filter: invert(1);
-} */
 
 .header-bg {
   background-image: url(assets/images/bg1.jpg);
@@ -175,6 +172,7 @@ button {
   width: 600px;
   height: 100px;
 }
+
 .imgdiv {
   position: relative;
   text-align: center;
@@ -188,6 +186,7 @@ button {
 }
 
 @media (min-width: 768px) {
+
   .header-bg {
     height: 700px;
   }
@@ -203,13 +202,14 @@ button {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    /* background-color: #fff; */
   }
+
   header.sticky {
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   }
+
   header .logo {
     display: block;
     color: #111;
@@ -226,6 +226,7 @@ button {
   header.sticky .logo {
     color: #111;
   }
+
   header .logo span {
     color: #ec5242;
   }
@@ -234,11 +235,6 @@ button {
     position: relative;
     display: flex;
   }
-
-  /* header .navigation.active {
-    display: none;
-    
-  } */
 
   header .navigation li {
     list-style: none;
@@ -254,6 +250,7 @@ button {
   header.sticky .navigation li a {
     color: #111;
   }
+
   header .navigation li a:hover {
     color: #ec5242;
   }
@@ -292,4 +289,5 @@ button {
   .grey {
     color: grey;
   }
+
 }
