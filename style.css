@@ -121,7 +121,7 @@ header .navigation.active li a {
 }
 
 .desktopcoursescard {
-  background-color:#272a31;
+  background-color: #272a31;
   width: 300px;
   height: 300px;
   margin-right: 5px;
@@ -191,9 +191,7 @@ button {
 .maincard {
   background-image: url(assets/images/images4.jpg);
   background-size: cover;
-  background-color: ;
   position: relative;
-  /* height: 600px; */
   background-repeat: no-repeat;
 }
 
