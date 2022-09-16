@@ -91,6 +91,10 @@ header .navigation.active li a {
   background-repeat: no-repeat;
 }
 
+.header-bgg {
+  height: 700px;
+}
+
 .headercontent {
   z-index: 300;
 }
