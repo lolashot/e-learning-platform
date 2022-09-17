@@ -177,6 +177,16 @@ header .navigation.active li a {
   color: #d3d3d3;
 }
 
+.grey-mobile {
+  color: rgb(0, 0, 14);
+  opacity: 0.5;
+  border: 0.001px solid #fff;
+}
+
+/* .texter {
+  color: #fff;
+} */
+
 .mobilecoursescard:hover {
   border: 3px solid white;
 }
