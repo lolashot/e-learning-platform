@@ -1,3 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  min-width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.topmost {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  min-width: 100%;
+  top: 0;
+  right: 0;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', 'Lato Black', sans-serif;
+}
+
+p, h2, h3, h4, h5, h6, a {
+  font-family: "Lato Black", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -122,7 +159,8 @@ header .navigation.active li a {
 }
 
 .text {
-  color: #d3d3d3;
+  color: grey;
+  /* font-weight: 600; */
 }
 
 .text1 {
@@ -134,11 +172,8 @@ header .navigation.active li a {
   color: #d3d3d3;
 }
 
-.desktopcoursescard {
-  background-color: #272a31;
-  width: 300px;
-  height: 300px;
-  margin-right: 5px;
+.mobilecoursescard:hover {
+  border: 3px solid white;
 }
 
 .coursescards {
@@ -206,7 +241,87 @@ header .navigation.active li a {
   color: #ec5242;
 }
 
+#overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200000;
+}
+
+.overlay-img {
+  opacity: 0.6;
+}
+
+#text-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  opacity: 2;
+}
+
+@media (max-width: 576px) {
+.bg {
+  max-width: 45%;
+  height: 100%;
+  margin: auto;
+}
+
+.bg img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.bg-content {
+  max-width: 45%;
+}
+
+.footer-ist {
+  margin-left: 0;
+}
+
+.footer-content  {
+  width: 100%;
+}
+
+.footer-ist {
+  margin-left: -50px;
+}
+}
+
+@media (max-width: 576px) {
+  .topmost {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .text-parent {
+    width: 30%;
+  }
+
+  .text {
+    font-size: small;
+  }
+}
+
 @media (min-width: 768px) {
+  .topmost {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+  }
+
   .header-bg {
     height: 600px;
     margin-top: 100px;
@@ -281,6 +396,18 @@ header .navigation.active li a {
     display: none;
   }
 
+  
+.desktopcoursescard {
+  background-color: #272a31;
+  width: 300px;
+  height: 300px;
+  margin-right: 5px;
+}
+
+.desktopcoursescard:hover {
+  border: 3px solid white;
+}
+
   .desktopcoursetitle {
     color: #ec5242;
   }
@@ -291,8 +418,9 @@ header .navigation.active li a {
     margin-left: 720px;
   }
 
-  footer {
-    background-color: grey;
+  .about-footer {
+    background-color: rgb(8, 8, 8);
+    color: #ffff;
   }
 
   .grey {

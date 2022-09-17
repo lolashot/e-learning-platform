@@ -17,12 +17,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="lecturers.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nmy7szs.css">
 
 
     <title>e-learning-platform</title>
   </head>
   <body>
-    <section class="">
+    <section class="topmost">
     <main class="header-bg" >
       <section class=" headercontent">
       <header>
@@ -60,7 +61,7 @@
                 <h4 class="text2 grey">So lets start learning web development.</h4>
               </div>
               </div>
-             </main>
+    </main>
     <section class="d-block d-lg-none">
         <div class="card maincard p-3 ">
             <div class="">
@@ -92,7 +93,7 @@
                 </div>
               </div>
               <div class="col-12 mt-3">
-                <div class="card">
+                <div class="card mobilecoursescard">
                   <div class="card-body">
                       <div class="row">
                       <img src="assets/icons/html.png" class="bg col-3 img-fluid" alt="" />
@@ -103,7 +104,7 @@
                 </div>
               </div>
               <div class="col-12 mt-3">
-                <div class="card">
+                <div class="card mobilecoursescard">
                   <div class="card-body">
                       <div class="row">
                       <img src="assets/icons/node.png" class="bg col-3 img-fluid" alt="" />
@@ -183,56 +184,54 @@
               </div> 
                  
     </section>
-    <section class=" d-block d-lg-none p-5">
-        <div class="card-body">
-            <h2 class="text-dark text-center ">Our Lecturers</h2>
-            <hr class="line m-auto">
-            <div class="col-12 mt-4">
-                <div class="card-body">
-                    <div  id="7" class="row lecturers">
-                    <img src="assets/images/person1.jpg" class="bg col-4" alt="" />
-                    <div class="col-8">
-                    <h2 class='name'>James Brown</h2>
-                    <!-- <div> -->
-                      <h6 class="title"id='position'>Former ICT director at Microsoft</h6>
-                      <div class="w-25">
-                        <hr class="desktopline w-50">
-                      </div>
-                      
-                    <!-- </div> -->
-                    
-
-                    <p id="description">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
-                  </div>  
-                </div>
-              </div>
-              </div>
-
-              <div class="col-12 mt-4">
-                <div class="card-body">
-                    <div id="6" class="row lecturers">
-                    <img src="assets/images/person1.jpg" class="bg col-4" alt="" />
-                    <div class="col-8">
-                    <h2 class="name">Angela Leo</h2>
-                    <h6 class="title"id="position">Chief Technical officer at Riches Institutes</h6>
+    <section class=" d-block d-md-none p-5">
+      <div class="card-body">
+          <h2 class="text-dark text-center ">Our Lecturers</h2>
+          <hr class="line m-auto">
+          <div class="col-12 mt-4">
+              <div class="card-body">
+                  <div  id="7" class="row lecturers">
+                  <img src="assets/images/person1.jpg" class="bg col-4" alt="" />
+                  <div class="col-8">
+                  <h2 class='name'>James Brown</h2>
+                    <h6 class="title"id='position'>Former ICT director at Microsoft</h6>
                     <div class="w-25">
                       <hr class="desktopline w-50">
-                    </div>
-                    <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
-                  </div>  
-                </div>
-              </div>
-              </div>
-               <div class="d-grid gap-2 mt-5">
-                <button class="btn btn-outline-secondary" disabled type="button">MORE 
-                  <i class="fa fa-angle-down chevron p-2"></i>
-                </button>
+                    </div>                 
 
-              </div>  
-                 </section>
-                 <section class="d-none d-lg-block p-5 mt-5">
+                  <p id="description d-none">James is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                </div>  
+              </div>
+            </div>
+            </div>
+
+            <div class="col-12 mt-4">
+              <div class="card-body">
+                  <div id="6" class="row lecturers">
+                  <img src="assets/images/person1.jpg" class="bg col-4" alt="" />
+                  <div class="col-8">
+                  <h2 class="name">Angela Leo</h2>
+                  <h6 class="title"id="position">Chief Technical officer at Riches Institutes</h6>
+                  <div class="w-25">
+                    <hr class="desktopline w-50">
+                  </div>
+                  <p id="description">Angela is a seasoned web developer with many years of experience in various languages and frameworks</p>
+                </div>  
+              </div>
+            </div>
+            </div>
+             <div class="d-grid gap-2 mt-5">
+              <button class="btn btn-outline-secondary" disabled type="button">MORE 
+                <i class="fa fa-angle-down chevron p-2"></i>
+              </button>
+
+            </div>  
+               </section>
+                 <section class="d-none d-md-block p-3">
                     <h2 class="text-dark text-center">Our Lecturers</h2>
-                <hr class="desktopline">
+                <div class="pb-3">
+                  <hr class="desktopline m-auto">
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                         <div class="card-body">
@@ -308,27 +307,31 @@
                  </div>
                         </div>
                  </section>
-                 <section class="pt-3 bg-dark mt-3 d-lg-block">
+                 <section class="pt-3 bg-dark mt-3 m-auto text-center">
                   <div class="card-body text-center">
                     <h2 class="text-white p-lg-3 ">Our Partners</h2>
-                <div class="d-block d-lg-flex justify-content-around">
-                  <h4 class="text">Goggle</h4>
-                  <h4 class="grey">Facebook</h4>
-                  <h4 class="text ">Microsoft</h4>
-                  <h4 class="grey">UN</h4>
+                <div class="row text-center p-3 justify-content-center w-75 m-auto">
+                  <h4 class="text col-4 col-md-2">GOOGLE</h4>
+                  <h4 class="text col-4 col-md-2">FACEBOOK</h4>
+                  <h4 class="text col-4 col-md-2">MICROSOFT</h4>
+                  <h4 class="text col-4 col-md-2">UBER</h4>
+                  <h4 class="text col-4 col-md-2">SONY</h4>
                 </div>
                 </div>
                  </section>
+
                  <footer class="p-5 d-none d-lg-block bg-white">
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex justify-content-start">
-                    <img src="assets/icons/logo.jpg">
-                    <div>
-                    <h2>Riches </h2>
-                    <h2>Learning Institute</h2>
+                  <div class=" w-75 d-flex justify-content-start m-auto">
+                    <div class="d-flex justify-content-start mx-1 px-5">
+                    <img src="assets/icons/logo.jpg" class=" w-25 m-auto">
+                    <div class="m-auto">
+                    <h5>Riches </h5>
+                    <h5>Learning Institute</h5>
                     </div>
                     </div>
-                  <p class="text-dark text-lg-white">@2022 a global web development institution</p>
+                    <div class="w-75">
+                      <p class="text-dark text-lg-white px-5">@2022 a global web development institution</p>
+                      <p class="text-dark text-lg-white px-5 mt-0">call us on: +233-90-98-7789-34 or email us at e-learning@gmail.com. We will be glad to hear from you!</p></div>
                   </div>
                  </footer>
     </section>

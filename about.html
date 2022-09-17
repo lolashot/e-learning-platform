@@ -19,9 +19,9 @@
     <title>e-learning-platform</title>
   </head>
   <body>
-    <section class="">
-    <main class="header-bg" >
-      <section class="container headercontent">
+    <main class="topmost">
+    <section class="header-bg" >
+      <section class="headercontent">
         <header>
           <a href="#" class="logo">RICHES</a><span class="dot">.</span></a>
           <div class="menuToggle toggler">
@@ -55,24 +55,25 @@
               </div>
             </div>
             </section>
-    </main>
-    <section id="alumnis" class="mt-5 justify-content-center align-items-center  container">
+          </section>
+    <section id="alumnis" class="mt-5 justify-content-center align-items-center container">
       <div class="">
         <h1 class="text1">See Our Alumnis</h1>
         <p class="title lead">here are some of our alumnis, with a brief summary of each of them.</p>
       </div>
-      <div class=" row">
-        <div class="card col-sm-12 col-md-6 mb-3">
-        <img src="assets/images/student3.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
+      
+      <div class="row">
+        <div class="card col-12 col-md-6 mb-3 m-auto">
+        <img src="assets/images/student3.jpg" class="card-img overlay-img" alt="...">
+        <div id="text-overlay" class="card-img-overlay">
           <h4 class="card-title">Caleb Smart</h4>
           <h5 class="card-text title"> FULLSTACK DEVELOPER</h5>
           <p class="card-text"><small>2019.</small></p>
+          </div>
         </div>
-      </div>
-      <div class="card col-sm-12 col-md-6  mb-3">
-        <img src="assets/images/student3.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
+      <div class="card col-12 col-md-6  mb-3 m-auto">
+        <img src="assets/images/student3.jpg" class="card-img overlay-img" alt="...">
+        <div id="text-overlay" class="card-img-overlay">
           <h4 class="card-title">James Craig</h4>
           <h5 class="card-text title"> FRONTEND DEVELOPER</h5>
           <p class="card-text"><small>2019.</small></p>
@@ -80,30 +81,47 @@
       </div>
       </div>
     </section>
-    <section class="p-4 bg-dark mt-5 d-block d-md-none">
-      <div class="card-body">
-        <h2 class="text-white text-center ">Our Partners</h2>
-    <div class="d-lg-flex justify-content-around ">
-      <h3 class="title">Goggle</h3>
-      <h3 class="title">Facebook</h3>
-      <h3 class="title ">Microsoft</h3>
-      <h3 class="title">UN</h3>
+     
+     <section class="pt-3 bg-dark mt-3 m-auto text-center d-block d-md-none">
+      <div class="card-body text-center">
+        <h2 class="text-white p-lg-3 ">Our Partners</h2>
+    <div class="row text-center p-3 justify-content-center w-75 m-auto">
+      <div class=" text-parent col-12 col-sm-4 col-md-2">
+        <h4 class="text col-12 col-sm-4 col-md-2">GOOGLE</h4>
+        </div>
+        <div class="text-parent col-12 col-sm-4 col-md-2">
+      <h4 class="text col-12 col-sm-4 col-md-2">FACEBOOK</h4>
+      </div>
+      <div class="text-parent col-12 col-sm-4 col-md-2">
+        <h4 class=" text mx-2" >MICROSOFT</h4>
+      </div>
+      <div class="text-parent col-12 col-sm-4 col-md-2">
+      <h4 class="text col-12 col-sm-4 col-md-2">UBER</h4>
+      </div>
+      <div class="text-parent col-12 col-sm-4 col-md-2">
+      <h4 class="text col-12 col-sm-4 col-md-2">SONY</h4>
+      </div>
     </div>
     </div>
      </section>
-     <footer class="p-5 bg-lg-dark mt-5">
-      <div class="d-flex justify-content-between">
-        <div class="d-flex justify-content-start">
-        <img src="assets/icons/logo.jpg">
-        <div>
-        <h2>Riches </h2>
-        <h2>Learning Institute</h2>
+
+     
+     <footer class="p-5 d-block d-md-none bg-white footer-ist">
+      <div class=" w-75 d-flex justify-content-start ml-0">
+        <div class="d-flex justify-content-start mx-1 px-5">
+        <img src="assets/icons/logo.jpg" class=" w-25 m-auto">
+        <div class="m-auto">
+        <h5>Riches </h5>
+        <h5>Learning Institute</h5>
         </div>
         </div>
-      <p class="text-dark text-lg-white">@2022 a global web development institution</p>
+        <div class="w-75">
+          <p class="text-dark text-lg-white px-5">@2022 a global web development institution</p>
+          <p class="text-dark text-lg-white px-5 mt-0 d-none d-md-block">call us on: +233-90-98-7789-34 or email us at e-learning@gmail.com. We will be glad to hear from you!</p></div>
       </div>
      </footer>
-    </section>
-    <script src="hamburger.js"></script>
+
+    </main>
+        <script src="hamburger.js"></script>
     </body>
 
