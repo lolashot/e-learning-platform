@@ -31,7 +31,13 @@ h1 {
   font-family: 'COCOGOOSE', 'Lato Black', sans-serif;
 }
 
-p, h2, h3, h4, h5, h6, a {
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: "Lato Black", Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
@@ -160,7 +166,6 @@ header .navigation.active li a {
 
 .text {
   color: grey;
-  /* font-weight: 600; */
 }
 
 .text1 {
@@ -253,7 +258,7 @@ header .navigation.active li a {
   opacity: 0.6;
 }
 
-#text-overlay{
+#text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -263,32 +268,27 @@ header .navigation.active li a {
 }
 
 @media (max-width: 576px) {
-.bg {
-  /* width: 22.5%; */
-  height: 100%;
-  margin: auto;
-}
+  .bg {
+    height: 100%;
+    margin: auto;
+  }
 
-.lecturers img {
-  object-fit: cover;
-  height: 100%;
-}
+  .lecturers img {
+    object-fit: cover;
+    height: 100%;
+  }
 
-.bg-content {
-  max-width: 45%;
-}
+  .bg-content {
+    max-width: 45%;
+  }
 
-.footer-ist {
-  margin-left: 0;
-}
+  .footer-content {
+    width: 100%;
+  }
 
-.footer-content  {
-  width: 100%;
-}
-
-.footer-ist {
-  margin-left: -50px;
-}
+  .footer-ist {
+    margin-left: -50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -396,17 +396,16 @@ header .navigation.active li a {
     display: none;
   }
 
-  
-.desktopcoursescard {
-  background-color: #272a31;
-  width: 300px;
-  height: 300px;
-  margin-right: 5px;
-}
+  .desktopcoursescard {
+    background-color: #272a31;
+    width: 300px;
+    height: 300px;
+    margin-right: 5px;
+  }
 
-.desktopcoursescard:hover {
-  border: 3px solid white;
-}
+  .desktopcoursescard:hover {
+    border: 3px solid white;
+  }
 
   .desktopcoursetitle {
     color: #ec5242;
