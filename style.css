@@ -68,7 +68,7 @@ header .navigation.active li a {
   position: relative;
   width: 40px;
   height: 40px;
-  background: url(./assets/icons/hambuger.png);
+  /* background: url(./assets/icons/hambuger.png); */
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -80,6 +80,17 @@ header .navigation.active li a {
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.menuToggle.active .hamburger {
+  display: none;
 }
 
 .header-bg {
@@ -197,6 +208,11 @@ header .navigation.active li a {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+}
+
+.chevron {
+  font-size: 24px;
+  color: #ec5242;
 }
 
 @media (min-width: 768px) {
