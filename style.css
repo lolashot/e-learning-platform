@@ -68,7 +68,6 @@ header .navigation.active li a {
   position: relative;
   width: 40px;
   height: 40px;
-  /* background: url(./assets/icons/hambuger.png); */
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -166,14 +165,6 @@ header .navigation.active li a {
   width: 35px;
   margin-left: 300px;
 }
-
-/* button {
-  background-color: white;
-  color: black;
-  border: 2px solid grey;
-  width: 50%;
-  margin-left: 150px;
-} */
 
 .aboutcardmain {
   width: 800px;
