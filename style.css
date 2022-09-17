@@ -235,10 +235,9 @@ header .navigation.active li a {
 }
 
 .maincard {
-  background-image: url(assets/images/images4.jpg);
-  background-size: cover;
+  background-image: url(assets/images/microversebg3.png);
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .chevron {
@@ -312,6 +311,10 @@ header .navigation.active li a {
 }
 
 @media (min-width: 768px) {
+  .first-div{
+    width: 60%;
+  }
+
   .topmost {
     box-sizing: border-box;
     padding: 0;

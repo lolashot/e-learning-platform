@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
       name.children[0].attributes[0].value = found.image;
       name.children[1].children[0].innerHTML = found.name;
       name.children[1].children[1].innerHTML = found.position;
-      name.children[1].children[2].innerHTML = found.description;
+      name.children[1].children[3].innerHTML = found.description;
     }
   });
 });
