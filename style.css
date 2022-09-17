@@ -264,12 +264,12 @@ header .navigation.active li a {
 
 @media (max-width: 576px) {
 .bg {
-  max-width: 45%;
+  /* width: 22.5%; */
   height: 100%;
   margin: auto;
 }
 
-.bg img {
+.lecturers img {
   object-fit: cover;
   height: 100%;
 }
