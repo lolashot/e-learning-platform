@@ -65,8 +65,7 @@ window.addEventListener('load', () => {
 
   let found = {};
   nodeList.forEach((name) => {
-
-    found = lecturers.find((lecturer) => lecturer.id == name.id);
+    found = lecturers.find((lecturer) => lecturer.id === name.id);
     if (found) {
       name.children[0].attributes[0].value = found.image;
       name.children[1].children[0].innerHTML = found.name;
