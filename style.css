@@ -151,7 +151,6 @@ header .navigation.active li a {
 .headercontent {
   z-index: 300;
   margin-bottom: -100px;
-  
 }
 
 .banner-card {
@@ -178,8 +177,7 @@ header .navigation.active li a {
 .titlewidth {
   font-weight: 500;
   font-size: 60px;
- }
-
+}
 
 .text {
   color: grey;
@@ -337,31 +335,18 @@ header .navigation.active li a {
 
 @media (min-width: 768px) {
   .headercontent {
-   margin-bottom: 100px;
-   padding-top: 20px;
+    margin-bottom: 100px;
+    padding-top: 20px;
   }
 
   .titlewidth {
-   font-weight: 500;
-   font-size: 60px;
+    font-weight: 500;
+    font-size: 60px;
   }
 
   .first-div {
     width: 60%; 
   }
-
-  .about-first-div {
-  }
-/* 
-  .topmost {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    min-width: 100%;
-    top: 0;
-    right: 0;
-  } */
 
   .header-bg {
     height: 600px;
@@ -470,7 +455,6 @@ header .navigation.active li a {
 
 @media (min-width: 992px) {
   .headercontent {
-   margin-bottom: 0;
-   
+    margin-bottom: 0;
   }
-}  
+}
