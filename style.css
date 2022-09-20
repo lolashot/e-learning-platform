@@ -17,16 +17,6 @@ body {
   right: 0;
 }
 
-/* .topmost {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  min-width: 100%;
-  top: 0;
-  right: 0;
-} */
-
 h1 {
   font-family: 'COCOGOOSE', 'Lato Black', sans-serif;
 }
@@ -46,7 +36,11 @@ a {
   cursor: pointer;
 }
 
-header {
+header .topnav {
+  display: none;
+}
+
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -58,25 +52,25 @@ header {
   transition: 0.5s;
 }
 
-header .logo {
+nav .logo {
   display: none;
 }
 
-header .logo span {
+nav .logo span {
   display: none;
 }
 
-header.sticky {
+nav.sticky {
   background: #fff;
   padding: 10px 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-header .navigation {
+nav .navigation {
   display: none;
 }
 
-header .navigation.active {
+nav .navigation.active {
   width: 100%;
   height: calc(100% - 68px);
   position: fixed;
@@ -89,21 +83,21 @@ header .navigation.active {
   background: #fff;
 }
 
-header .navigation li {
+nav .navigation li {
   margin-left: 0;
 }
 
-header .navigation li a {
+nav .navigation li a {
   color: #111;
   font-size: 1.6em;
 }
 
-header .navigation.active li {
+nav .navigation.active li {
   list-style-type: none;
   padding-top: 20px;
 }
 
-header .navigation.active li a {
+nav .navigation.active li a {
   color: #ec5242;
 }
 
@@ -333,7 +327,28 @@ header .navigation.active li a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
+
+  header .topnav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  header .header-links {
+    margin-right: 30px;
+  }
+  
+  header .about-header-links {
+    margin-right: 80px;
+  }  
+
   .headercontent {
     margin-bottom: 100px;
     padding-top: 20px;
@@ -354,7 +369,7 @@ header .navigation.active li a {
     padding-top: 50px;
   }
 
-  header {
+  nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -367,13 +382,13 @@ header .navigation.active li a {
     transition: 0.5s;
   }
 
-  header.sticky {
+  nav.sticky {
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   }
 
-  header .logo {
+  nav .logo {
     display: block;
     color: #111;
     font-weight: 700;
@@ -381,36 +396,36 @@ header .navigation.active li a {
     text-decoration: none;
   }
 
-  header .logo span {
+  nav .logo span {
     display: block;
     color: #ec5242;
   }
 
-  header.sticky .logo {
+  nav.sticky .logo {
     color: #111;
   }
 
-  header .navigation {
+  nav .navigation {
     position: relative;
     display: flex;
   }
 
-  header .navigation li {
+  nav .navigation li {
     list-style: none;
     margin-left: 30px;
   }
 
-  header .navigation li a {
+  nav .navigation li a {
     text-decoration: none;
     color: #111;
     font-weight: 300;
   }
 
-  header.sticky .navigation li a {
+  nav.sticky .navigation li a {
     color: #111;
   }
 
-  header .navigation li a:hover {
+  nav .navigation li a:hover {
     color: #ec5242;
   }
 
@@ -446,6 +461,10 @@ header .navigation.active li a {
   .about-footer {
     background-color: rgb(8, 8, 8);
     color: #ffff;
+  }
+
+  .footer-text {
+    color: #fff;
   }
 
   .grey {
