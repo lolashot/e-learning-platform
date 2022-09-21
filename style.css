@@ -7,18 +7,15 @@
   scroll-behavior: smooth;
 }
 
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  min-width: 100%;
+  width: 100%;
   top: 0;
   right: 0;
-}
-
-h1 {
-  font-family: 'COCOGOOSE', 'Lato Black', sans-serif;
 }
 
 p,
@@ -31,18 +28,58 @@ a {
   font-family: "Lato Black", Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
+h1 {
+  font-family: 'COCOGOOSE', 'Lato Black', sans-serif;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.main-index-body {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 130%;
+  top: 0;
+  right: 0;
+}
+
+.main-about-body {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 80%;
+  top: 0;
+  right: 0;
+}
+
+.parent {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-parent {
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header .topnav {
   display: none;
 }
 
+/* header .topnav {position:fixed;top:0;right:0;left:0;} */
+
+
 nav {
-  position: fixed;
+  position: relative;
   top: 0;
+  right:0;
   left: 0;
   width: 100%;
   padding: 10px 20px;
@@ -84,7 +121,7 @@ nav .navigation.active {
 }
 
 nav .navigation li {
-  margin-left: 0;
+  margin-left: -100px;
 }
 
 nav .navigation li a {
@@ -285,6 +322,11 @@ nav .navigation.active li a {
   opacity: 2;
 }
 
+
+.about-footer {
+  margin-left: -85px;
+}
+
 @media (max-width: 576px) {
   .bg {
     height: 100%;
@@ -328,11 +370,17 @@ nav .navigation.active li a {
 }
 
 @media (min-width: 768px) {
-  header .topnav {
-    display: block;
+  .main-about-body {
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+    width: 86%;
+    top: 0;
+    right: 0;
   }
 
   header .topnav {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -343,18 +391,18 @@ nav .navigation.active li a {
     align-items: center;
     transition: 0.5s;
   }
-
   header .header-links {
     margin-right: 30px;
   }
   
   header .about-header-links {
     margin-right: 80px;
-  }
+    margin-left: -800px;
+  }  
 
   .headercontent {
     margin-bottom: 100px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   .titlewidth {
@@ -368,12 +416,12 @@ nav .navigation.active li a {
 
   .header-bg {
     height: 600px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 50px;
   }
 
   nav {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -459,6 +507,21 @@ nav .navigation.active li a {
     border: 3px solid #ec5242;
     width: 35px;
     margin-left: 720px;
+  }
+
+  .text1 {
+    color: #272a31;
+    font-size: 30px;
+    margin-top: -40px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .alumni-head {
+    margin-bottom: 50px;
+
   }
 
   .about-footer {

@@ -3,14 +3,14 @@ const lecturers = [
     id: '0',
     name: 'Joe Praise',
     position: 'chief technical director',
-    description: 'a world class professor of computer science',
+    description: 'Professor of computer science',
     image: 'assets/images/lecturer1.jpg',
   },
   {
     id: '1',
     name: 'Smith John ',
     position: 'Former ICT director at Microsoft',
-    description: 'with over 20yrs experience in coding, and worked at microsoft',
+    description: 'Microsoft senior analyst',
     image: './assets/images/lecturer2.jpg',
   },
   {
