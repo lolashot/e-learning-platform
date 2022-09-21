@@ -72,12 +72,10 @@ header .topnav {
   display: none;
 }
 
-/* header .topnav {position:fixed;top:0;right:0;left:0;} */
-
 nav {
   position: relative;
   top: 0;
-  right:0;
+  right: 0;
   left: 0;
   width: 100%;
   padding: 10px 20px;
@@ -390,7 +388,7 @@ nav .navigation.active li a {
   header .header-links {
     margin-right: 30px;
   }
-  
+          
   header .about-header-links {
     margin-right: 80px;
     margin-left: -800px;
