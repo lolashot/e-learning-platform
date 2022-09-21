@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
 }
 
-
 body {
   box-sizing: border-box;
   padding: 0;
@@ -74,7 +73,6 @@ header .topnav {
 }
 
 /* header .topnav {position:fixed;top:0;right:0;left:0;} */
-
 
 nav {
   position: relative;
@@ -322,7 +320,6 @@ nav .navigation.active li a {
   opacity: 2;
 }
 
-
 .about-footer {
   margin-left: -85px;
 }
@@ -380,7 +377,6 @@ nav .navigation.active li a {
   }
 
   header .topnav {
-    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -398,11 +394,10 @@ nav .navigation.active li a {
   header .about-header-links {
     margin-right: 80px;
     margin-left: -800px;
-  }  
+  }
 
   .headercontent {
     margin-bottom: 100px;
-    /* padding-top: 20px; */
   }
 
   .titlewidth {
@@ -416,7 +411,6 @@ nav .navigation.active li a {
 
   .header-bg {
     height: 600px;
-    /* margin-top: 100px; */
     padding-top: 50px;
   }
 
@@ -521,7 +515,6 @@ nav .navigation.active li a {
 
   .alumni-head {
     margin-bottom: 50px;
-
   }
 
   .about-footer {
