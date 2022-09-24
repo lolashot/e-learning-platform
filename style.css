@@ -41,7 +41,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   scroll-behavior: smooth;
-  width: 130%;
+  width: 100%;
   top: 0;
   right: 0;
 }
@@ -56,7 +56,7 @@ a {
 }
 
 .parent {
-  max-width: 80%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -196,6 +196,14 @@ nav .navigation.active li a {
 
 .greeting {
   color: #ec5242;
+}
+
+.card-image-me {
+  width: 80%;
+}
+
+.name-title {
+  margin-top: -35px;
 }
 
 .title {
